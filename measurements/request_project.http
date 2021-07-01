@@ -1,0 +1,18 @@
+GET http://127.0.0.1:8000/api/v1/project/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/v1/project/
+Content-Type: application/json
+
+{"name": "Смоленск", "latitude": 16.10, "longitude": 17.34}
+
+###
+PUT http://127.0.0.1:8000/api/v1/project/2/
+Content-Type: application/json
+
+{"name": "Москва", "latitude": 16.10, "longitude": 17.34}
+
+###
+DELETE http://127.0.0.1:8000/api/v1/project/1/
+Content-Type: application/json

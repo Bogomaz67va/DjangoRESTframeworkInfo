@@ -1,0 +1,18 @@
+GET http://127.0.0.1:8000/api/v1/measurement/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/v1/measurement/
+Content-Type: application/json
+
+{"value": 26.1, "project": 2}
+
+###
+PUT http://127.0.0.1:8000/api/v1/measurement/4/
+Content-Type: application/json
+
+{"value": 46.1, "project": 2}
+
+###
+DELETE http://127.0.0.1:8000/api/v1/measurement/4/
+Content-Type: application/json
